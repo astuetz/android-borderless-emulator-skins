@@ -1,0 +1,33 @@
+parts {
+  device {
+    display {
+      width 1080
+      height 1920
+      x 0
+      y 0
+    }
+  }
+}
+layouts {
+  portrait {
+    width 1080
+    height 1920
+    event EV_SW:0:1
+    part1 {
+      name device
+      x 0
+      y 0
+    }
+  }
+  landscape {
+    width 1920
+    height 1080
+    event EV_SW:0:0
+    part1 {
+      name device
+      x 0
+      y 0
+      rotation 3
+    }
+  }
+}
